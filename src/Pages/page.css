@@ -1,0 +1,63 @@
+@tailwind components;
+@layer components {
+    .hero-bg {
+      @apply bg-cover bg-center h-auto w-44;
+      background-image: url('https://cdn.firstcry.com/education/2023/01/13101355/Names-Of-Household-Appliances-In-English.jpg');
+    }
+  }
+  @layer components {
+    .offers-bg {
+      @apply bg-cover bg-center object-cover ;
+      background-image: url('https://img.freepik.com/free-vector/modern-new-arrival-shopping-background-design_1017-36555.jpg');
+    }
+  }
+
+  @layer components {
+    .product-bg {
+        @apply bg-cover bg-center h-auto w-44;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1MeX_I1YsCNo2j72QhItfMt6tN7TFsZO6bA&s');
+    }
+  }
+
+  @layer components{
+    .sale-bg {
+        @apply bg-cover bg-center h-auto w-44;
+        background-image: url('https://rukminim1.flixcart.com/fk-p-flap/530/810/image/131c8c7ecafd87e5.jpg?q=20');
+    }
+  }
+
+  @layer components{
+    .arrival-bg {
+        @apply bg-cover bg-center h-60 w-44;
+        background-image: url('https://assets.vogue.com/photos/5891e0ebb482c0ea0e4db2a8/4:3/w_2560%2Cc_limit/02-lestrange.jpg');
+    }
+  }
+
+  @layer components{
+    .grocery-bg {
+        @apply bg-cover bg-center h-60 w-44;
+        background-image: url('https://media.istockphoto.com/id/171302954/photo/groceries.jpg?s=612x612&w=0&k=20&c=D3MmhT5DafwimcYyxCYXqXMxr1W25wZnyUf4PF1RYw8=');
+    }
+  }
+
+  @layer components{
+    .handcraft-bg {
+        @apply bg-cover bg-center w-52 h-56 object-cover mb-2;
+        background-image: url('https://www.shutterstock.com/shutterstock/photos/2410893649/display_1500/stock-photo-beautiful-bamboo-furniture-works-of-handicraft-for-sale-during-handicraft-fair-in-kolkata-2410893649.jpg');
+    }
+  }
+  @layer components{
+    .bench-bg {
+        @apply bg-cover bg-center w-52 h-56 object-cover mb-2;
+        background-image: url('https://media.istockphoto.com/id/1165916723/photo/the-setup-for-success.jpg?s=612x612&w=0&k=20&c=40J6tNYEPe3PZm9cprMVIMoC9BiUXH3c8OKCS5USGC8=');
+    }
+  }
+
+  @layer components{
+    .fashion-bg {
+        @apply bg-cover bg-center w-52 h-56 object-cover mb-2;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQkL5rey1xmcw2mlnkfJuhFlSS-C3-5uQDcA&s');
+    }
+  }
+
+  
