@@ -40,54 +40,62 @@ export default function CartPage() {
     useEffect(() => {
         const items = JSON.parse(localStorage.getItem('cartProducts'));
         if (Array.isArray(items)) {
-          setCartProducts(items);
+            setCartProducts(items);
         }
-      }, []);
-    
-      useEffect(() => {
+    }, []);
+
+    useEffect(() => {
         localStorage.setItem('cartProducts', JSON.stringify(cartProducts));
-      }, [cartProducts]);
+    }, [cartProducts]);
 
     return (
-        <div className=' relative top-28  flex-wrap w-auto'>
-            <div className=' mr-10 '>
+        <div className="lg:relative lg:top-28  flex-wrap w-auto ">
+            <div className="mr-10   md:absolute md:top-28  ">
                 {cartProducts.map((item, idx) => (
-                    <div key={idx} className=' flex flex-wrap'>
-                        <div className='shadow-md  m-5'>
-                            <img src={item.image} alt={item.title} className='w-96 h-96' />
+                    <div key={idx} className="flex flex-wrap mt-24">
+                        <div className="shadow-md my-5 mx-3 ">
+                            <img src={item.image} alt={item.title} className="w-96 h-96" />
                         </div>
-                        <div className='shadow-md m-5 w-1/3 p-2'>
-                            <div className='text-xl'>{item.title}</div>
+                        <div className="shadow-md  m-5  md:w-1/3 sm:w-screen  p-10   ">
+                            <div className="text-xl">{item.title}</div>
                             <div>Price: ${item.price}</div>
                             {/* Add more details as needed */}
-                            <li className="text-gray-400 mt-2">
-                                <span className="text-gray-600">Available: {item.available}</span>
-                            </li>
-                            <li className="text-gray-400 mt-2">
-                                <span className="text-gray-600">Min-Quantity: {item.weight}</span>
-                            </li>
-                            <li className="text-gray-400 mt-2">
-                                <span className="text-gray-600">Shipment: {item.ship}</span>
-                            </li>
-                            <li className="text-gray-400 mt-2">
-                                <span className="text-gray-600">Warranty: {item.warranty}</span>
-                            </li>
-                            <li className="text-gray-400 mt-2">
-                                <span className="text-gray-600">Return Policy: {item.return}</span>
-                            </li>
+                            <ul>
+                                <li className="text-gray-400 mt-2">
+                                    <span className="text-gray-600">Available: {item.available}</span>
+                                </li>
+                                <li className="text-gray-400 mt-2">
+                                    <span className="text-gray-600">Min-Quantity: {item.weight}</span>
+                                </li>
+                                <li className="text-gray-400 mt-2">
+                                    <span className="text-gray-600">Shipment: {item.ship}</span>
+                                </li>
+                                <li className="text-gray-400 mt-2">
+                                    <span className="text-gray-600">Warranty: {item.warranty}</span>
+                                </li>
+                                <li className="text-gray-400 mt-2">
+                                    <span className="text-gray-600">Return Policy: {item.return}</span>
+                                </li>
+                            </ul>
                             <div>
-                                <button onClick={() => removeFromCart(item.id)} className='  mt-3  ml-3 bg-blue-500 p-2 rounded text-white'>Remove</button>
+                                <button
+                                    onClick={() => removeFromCart(item.id)}
+                                    className="mt-3 ml-3 bg-blue-500 p-2 rounded text-white"
+                                >
+                                    Remove
+                                </button>
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
-            <div className=' fixed top-32 right-28 shadow-lg rounded'>
-                <h1 className='text-center font-bold mt-10 text-2xl'>Bill Payment</h1>
+            <div className=" lg:fixed lg:top-32 lg:right-16 lg:shadow-lg lg:w-1/3 md:left-16 md:w-screen  lg:rounded md:fixed md:bottom-0  md:1/3    sm:fixed sm:bottom-0">
+                <h1 className="text-center font-bold mt-10 text-2xl ">Bill Payment</h1>
                 <ul>
                     {renderCartItems(cartProducts)}
                 </ul>
             </div>
         </div>
+
     );
 }
