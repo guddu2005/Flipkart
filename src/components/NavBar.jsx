@@ -17,7 +17,7 @@ export default function NavBar() {
 
   }
   return (
-    <div className='fixed w-full top-0 z-10'>
+    <div className='fixed w-screen top-0 z-10'>
       <div className=' bg-blue-700 '>
         <div className=' h-20 text-white font-semibold mx-5 flex justify-around lg:mx-24 sm:mx-8 '>
           <div className='w-14 lg:w-32 sm:w-32 lg:mt-2 sm:mt-4 mt-4 '>
