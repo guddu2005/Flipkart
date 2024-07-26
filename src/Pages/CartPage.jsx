@@ -89,7 +89,7 @@ export default function CartPage() {
                     </div>
                 ))}
             </div>
-            <div className=" lg:fixed lg:top-32 lg:right-16 lg:shadow-lg lg:w-1/3 md:left-16 md:w-screen  lg:rounded md:fixed md:bottom-0  md:1/3    sm:fixed sm:bottom-0">
+            <div className=" lg:fixed lg:top-32 lg:right-16 lg:shadow-lg lg:w-1/3 md:left-16 md:w-screen  pb-10 lg:rounded md:fixed md:bottom-0  md:1/3    sm:fixed sm:bottom-0">
                 <h1 className="text-center font-bold mt-10 text-2xl ">Bill Payment</h1>
                 <ul>
                     {renderCartItems(cartProducts)}
