@@ -46,7 +46,7 @@ export default function NavBar() {
         </div>
       </div>
       <div className='bg-white shadow-md'>
-        <ul className='flex justify-around  h-7 lg:mx-24   overflow-scroll hide-scrollbar sm:overflow-x'>
+        <ul className='flex justify-around  h-7 lg:mx-24   overflow-x-scroll hide-scrollbar sm:overflow-x-scroll'>
           <li className='cursor-pointer hover:text-blue-600 ml-5' >Electronics </li>
           <li className='cursor-pointer hover:text-blue-600 ml-3' >TV & Appliances</li>
           <li className='cursor-pointer hover:text-blue-600 ml-3' >Men </li>

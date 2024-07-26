@@ -103,7 +103,7 @@ const HomePage = () => {
         <section className='flex justify-around overflow-x-scroll hide-scrollbar'>
           <div className='inline-block border border-gray-300 rounded p-2 m-2'>
             <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/r/d/-original-imah2nyhz7jehgrn.jpeg?q=70" className='lg:h-56 md:h-44 h-24' alt="CMF Phone 1" />
-            <p>CMF Phone 1</p>
+            <p>CMF Phone </p>
             <p className='font-semibold'>From ₹14,999*</p>
           </div>
           <div className='inline-block border border-gray-300 rounded p-2 m-2'>
@@ -113,7 +113,7 @@ const HomePage = () => {
           </div>
           <div className='inline-block border border-gray-300 rounded p-2 m-2'>
             <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/y/9/0/-original-imahyuhfg2z4fvyh.jpeg?q=70" alt="Realme P1 5g" className='lg:h-56 md:h-44 h-24' />
-            <p>Realme P1 5g</p>
+            <p className=''>Realme P1 5g</p>
             <p className='font-semibold'>Just ₹15,999</p>
           </div>
           <div className='inline-block border border-gray-300 rounded p-2 m-2'>
