@@ -17,7 +17,7 @@ export default function NavBar() {
 
   }
   return (
-    <div className='fixed w-screen top-0 z-10'>
+    <div className='fixed w-full top-0 z-10'>
       <div className=' bg-blue-700 '>
         <div className=' h-20 text-white font-semibold mx-5 flex justify-around lg:mx-24 sm:mx-8 '>
           <div className='w-14 lg:w-32 sm:w-32 lg:mt-2 sm:mt-4 mt-4 '>
@@ -34,12 +34,12 @@ export default function NavBar() {
             </Link>
 
           </form>
-          <button  className='bg-white mt-7 text-blue-700 lg:block sm:hidden hidden text-lg w-24 mt-5 h-10' >
+          <button  className='bg-white mt-5 text-blue-700 lg:block sm:hidden hidden text-lg w-24  h-10' >
             Login
           </button>
           <a href='https://seller.flipkart.com/sell-online?utm_source=fkwebsite&utm_medium=websitedirect' className='lg:block sm:hidden hidden mt-7'>Become Seller</a>
           <a href='https://www.flipkart.com/communication-preferences/push?t=all' className=' mt-7 lg:block sm:block hidden'>More</a>
-          <Link to="/cartpage" className='text-white mt-7 ml-4  lg:mt-7 sm:mt-7'>
+          <Link to="/cartpage" className='text-white mt-5 ml-4  lg:mt-7 sm:mt-7'>
             <FontAwesomeIcon icon={faShoppingCart} />
             Cart
           </Link>

@@ -2,163 +2,165 @@ import React from 'react';
 import './page.css'
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-gray-100 mt-5 relative -z-10 top-24 ">
-      <section className='mx-3  mt-8 font-semibold  flex justify-between bg-white text-center px-28'>
-        <div className=''>
-          <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/698ba0cebe456aaf.jpg?q=100" alt="" />
-          <p>Top Offers</p>
-        </div>
-        <div>
-          <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/44e10b16e649b691.jpg?q=100" alt="" />
-          <p>Mobiles&Tablets</p>
-        </div>
-        <div>
-          <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/717b5077a5e25324.jpg?q=100" alt="" />
-          <p>TV & Appliances</p>
-        </div>
-        <div>
-          <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/9d4e9c605fc1d2d3.jpg?q=100" alt="" />
-          <p>Electronics</p>
-        </div>
-        <div>
-          <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/9d4e9c605fc1d2d3.jpg?q=100" alt="" />
-          <p>Fashion</p>
-        </div>
-        <div>
-          <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/a5e656672d0548dd.jpg?q=100" alt="" />
-          <p>Beuty</p>
-        </div>
-        <div>
-          <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/5b813b64a3179898.jpg?q=100" alt="" />
-          <p>Home&Kitchen</p>
-        </div>
-        <div>
-          <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/7a5e96c10ada8a56.jpg?q=100" alt="" />
-          <p>Furniture</p>
-        </div>
-        <div>
-          <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/57fe1ffe54569c41.jpg?q=100" alt="" />
-          <p>Travel</p>
-        </div>
-        <div>
-          <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/25f400c36bc3487d.jpg?q=100" alt="" />
-          <p>Grocery</p>
-        </div>
+    <div className="w-screen bg-gray-100 mt-5 relative -z-10 top-24 ">
+      {/* <div className='fixed overflow-scroll w-60 bg-red-500'>
+      <section className='mx-3 mt-8 font-semibold flex justify-between bg-white text-center lg:px-28 sm:px-4 '>
+          <div className='mmd:-2  sm:m-2 m-'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/698ba0cebe456aaf.jpg?q=100" alt="Top Offers" className='sm:h-12  md:h-24 h-10' />
+            <p className='sm:text-sm md:text-lg text-sm '>Top Offers</p>
+          </div>
+          <div className='mmd:-2  sm:m-2 m-'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/44e10b16e649b691.jpg?q=100" alt="Mobiles & Tablets" className='sm:h-12  md:h-24 h-10' />
+            <p className='sm:text-sm md:text-lg  text-sm'>Mobiles & Tablets</p>
+          </div>
+          <div className='md:m-2 sm:m-2 m-'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/717b5077a5e25324.jpg?q=100" alt="TV & Appliances" className='sm:h-12  md:h-24 h-10' />
+            <p className='sm:text-sm md:text-lg text-sm'>TV & Appliances</p>
+          </div>
+          <div className='mmd:-2  sm:m-2 m-'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/9d4e9c605fc1d2d3.jpg?q=100" alt="Electronics" className='sm:h-12  md:h-24 h-10' />
+            <p className='sm:text-sm md:text-lg text-sm'>Electronics</p>
+          </div>
+          <div className='md:m-2 sm:m-2 m-'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/9d4e9c605fc1d2d3.jpg?q=100" alt="Fashion" className='sm:h-12  md:h-24 h-10' />
+            <p className='sm:text-sm md:text-lg text-sm'>Fashion</p>
+          </div>
+          <div className='md:m-2 sm:m-2 m-'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/a5e656672d0548dd.jpg?q=100" alt="Beauty" className='sm:h-12  md:h-24 h-10' />
+            <p className='sm:text-sm md:text-lg text-sm'>Beauty</p>
+          </div>
+          <div className='md:m-2 sm:m-2 m-'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/5b813b64a3179898.jpg?q=100" alt="Home & Kitchen" className='sm:h-12  md:h-24 h-10' />
+            <p className='sm:text-sm md:text-lg text-sm'>Home & Kitchen</p>
+          </div>
+          <div className='md:m-2 sm:m-2 m-'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/7a5e96c10ada8a56.jpg?q=100" alt="Furniture" className='sm:h-12  md:h-24 h-10' />
+            <p className='sm:text-sm md:text-lg text-sm'>Furniture</p>
+          </div>
+          <div className='md:m-2 sm:m-2 m-'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/57fe1ffe54569c41.jpg?q=100" alt="Travel" className='sm:h-12  md:h-24 h-10' />
+            <p className='sm:text-sm md:text-lg text-sm'>Travel</p>
+          </div>
+          <div className='md:m-2 sm:m-2 m-'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/25f400c36bc3487d.jpg?q=100" alt="Grocery" className='sm:h-12 md:h-24 h-10' />
+            <p className='sm:text-sm md:text-lg text-sm'>Grocery</p>
+          </div>
       </section>
+        </div> */}
+      <div className=' flex justify-around  w-screen  sm:overflow-x '>
+        <section className='flex justify-between  w-auto bg-white lg:mx-5 md: overflow-x-scroll hide-scrollbar'>
+          <div className='md:m-2 sm:m-2 m-1 '>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/698ba0cebe456aaf.jpg?q=100" alt="Top Offers" className='sm:h-12 md:h-24 lg:h-32 h-10' />
+            <p className='text-center '>Top Offers</p>
+          </div>
+          <div className='md:m-2 sm:m-2 m-1'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/44e10b16e649b691.jpg?q=100" alt="Mobiles & Tablets" className='sm:h-12 md:h-24 lg:h-32 h-10' />
+            <p className='text-center'>Mobiles & Tablets</p>
+          </div>
+          <div className='md:m-2 sm:m-2 m-1'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/717b5077a5e25324.jpg?q=100" alt="TV & Appliances" className='sm:h-12 md:h-24 lg:h-32 h-10' />
+            <p className='text-center'>TV & Appliances</p>
+          </div>
+          <div className='md:m-2 sm:m-2 m-1'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/9d4e9c605fc1d2d3.jpg?q=100" alt="Electronics" className='sm:h-12 md:h-24 lg:h-32 h-10' />
+            <p className='text-center'>Electronics</p>
+          </div>
+          <div className='md:m-2 sm:m-2 m-1'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/9d4e9c605fc1d2d3.jpg?q=100" alt="Fashion" className='sm:h-12 md:h-24 lg:h-32 h-10' />
+            <p className='text-center'>Fashion</p>
+          </div>
+          <div className='md:m-2 sm:m-2 m-1'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/a5e656672d0548dd.jpg?q=100" alt="Beauty" className='sm:h-12 md:h-24 lg:h-32 h-10' />
+            <p className='text-center'>Beauty</p>
+          </div>
+          <div className='md:m-2 sm:m-2 m-1'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/5b813b64a3179898.jpg?q=100" alt="Home & Kitchen" className='sm:h-12 md:h-24 lg:h-32 h-10' />
+            <p className='text-center'>Home & Kitchen</p>
+          </div>
+          <div className='md:m-2 sm:m-2 m-1'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/7a5e96c10ada8a56.jpg?q=100" alt="Furniture" className='sm:h-12 md:h-24 lg:h-32 h-10' />
+            <p className='text-center'>Furniture</p>
+          </div>
+          <div className='md:m-2 sm:m-2 m-1'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/57fe1ffe54569c41.jpg?q=100" alt="Travel" className='sm:h-12 md:h-24 lg:h-32 h-10' />
+            <p className='text-center'>Travel</p>
+          </div>
+          <div className='md:m-2 sm:m-2 m-1'>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/25f400c36bc3487d.jpg?q=100" alt="Grocery" className='sm:h-12 md:h-24 lg:h-32 h-10' />
+            <p className='text-center'>Grocery</p>
+          </div>
+        </section>
+      </div>
+
       {/* Hero Section */}
-      <section className="bg-white  mx-3 offers-bg h-11/12 mt-3 text-white  py-16">
+      <section className="bg-white  w-auto mx-3 offers-bg h-11/12 mt-3  text-white  py-16">
         <div className="container mx-auto text-center">
-          <h1 className="text-4xl font-bold mb-4">New arrivals are here</h1>
           <button className="px-6 py-3 mt-56 bg-blue-500 text-white rounded">Shop New Arrivals</button>
         </div>
       </section>
       <section className='mt-5 pb-8 bg-white py-2 mx-3'>
-        <h1 className='text-2xl  font-semibold mx-10 mb-5'>Deals on Smartphone</h1>
-        <section className='flex justify-between mx-5 text-center'>
-          <div className='border border-gray-300 rounded p-2'>
-            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/r/d/-original-imah2nyhz7jehgrn.jpeg?q=70" className='h-56 hover:scale-50' alt="" />
+        <h1 className='text-2xl font-semibold mx-10 mb-5'>Deals on Smartphone</h1>
+        <section className='flex justify-around overflow-x-scroll hide-scrollbar'>
+          <div className='inline-block border border-gray-300 rounded p-2 m-2'>
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/r/d/-original-imah2nyhz7jehgrn.jpeg?q=70" className='lg:h-56 md:h-44 h-24' alt="CMF Phone 1" />
             <p>CMF Phone 1</p>
-            <p className='font-semibold'>From 14999*</p>
+            <p className='font-semibold'>From ₹14,999*</p>
           </div>
-          <div  className='border border-gray-300 rounded p-2'>
-            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/g/q/5/-original-imahfkf6jcuhhzyb.jpeg?q=70" alt="" className='h-56' />
+          <div className='inline-block border border-gray-300 rounded p-2 m-2'>
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/g/q/5/-original-imahfkf6jcuhhzyb.jpeg?q=70" alt="Redmi 13c 5G" className='lg:h-56 md:h-44 h-24' />
             <p>Redmi 13c 5G</p>
             <p className='font-semibold'>Just ₹10,499</p>
           </div>
-          <div  className='border border-gray-300 rounded p-2'>
-            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/y/9/0/-original-imahyuhfg2z4fvyh.jpeg?q=70" alt="" className='h-56' />
+          <div className='inline-block border border-gray-300 rounded p-2 m-2'>
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/y/9/0/-original-imahyuhfg2z4fvyh.jpeg?q=70" alt="Realme P1 5g" className='lg:h-56 md:h-44 h-24' />
             <p>Realme P1 5g</p>
             <p className='font-semibold'>Just ₹15,999</p>
           </div>
-          <div  className='border border-gray-300 rounded p-2'>
-            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/m/p/y/12-pro-5g-rmx3842-realme-original-imagxgnhafyjz8rb.jpeg?q=70" alt="" className='h-56' />
-            <p>realme 12 Pro 5G </p>
+          <div className='inline-block border border-gray-300 rounded p-2 m-2'>
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/m/p/y/12-pro-5g-rmx3842-realme-original-imagxgnhafyjz8rb.jpeg?q=70" alt="realme 12 Pro 5G" className='lg:h-56 md:h-44 h-24' />
+            <p>realme 12 Pro 5G</p>
             <p className='font-semibold'>₹22,999</p>
           </div>
-          <div  className='border border-gray-300 rounded p-2'>
-            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/r/s/r/-original-imagpfbtmrr7spgc.jpeg?q=70" alt="" className='h-56' />
+          <div className='inline-block border border-gray-300 rounded p-2 m-2'>
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/r/s/r/-original-imagpfbtmrr7spgc.jpeg?q=70" alt="vivo T2 5G" className='lg:h-56 md:h-44 h-24' />
             <p>vivo T2 5G</p>
             <p className='font-semibold'>₹23,999</p>
           </div>
-          <div  className='border border-gray-300 rounded p-2'>
-            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70" alt="" className='h-56' />
-            <p>Apple iPhone 15 </p>
-            <p className='font-semibold'  >₹65,499</p>
+          <div className='inline-block border border-gray-300 rounded p-2 m-2'>
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70" alt="Apple iPhone 15" className='lg:h-56 md:h-44 h-24' />
+            <p>Apple iPhone 15</p>
+            <p className='font-semibold'>₹65,499</p>
           </div>
         </section>
+
       </section>
 
-      <section className='flex bg-white mt-2 mx-3 '>
-        <img  className='ml-2 w-1/3' src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/1a6ccb003d9a7b3d.jpg?q=20" alt="" />
+
+      <section className='flex bg-white mt-2 mx-3 w-full '>
+        <img className='ml-2 w-1/3' src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/1a6ccb003d9a7b3d.jpg?q=20" alt="" />
         <img className='ml-2 w-1/3 ' src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/e5cac70efd92ae9a.png?q=20" alt="" />
         <img className='ml-2 mr-2 w-1/3 overflow-hidden ' src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/83aefeef8cd78687.jpg?q=20" alt="" />
       </section>
-      <section  className='bg-white mx-3 px-2 pb-5 '>
-        <h1 className='text-2xl  font-semibold mx-10 mb-5 mt-5'>Top Deals On Fashion</h1>
-        <section className='flex justify-between  text-center'>
-          <div className='border border-gray-300 rounded p-2'>
-            <img src="https://rukminim2.flixcart.com/image/612/612/l2nmnww0/shoe/x/c/t/8-ga2882-8-adidas-ftwwht-ambsky-orarus-original-imagdyczngyhuagc.jpeg?q=70" className='h-44 hover:scale-50' alt="" />
-            <p>Shoes</p>
-            <p className='font-semibold'>From 4,999*</p>
-          </div>
-          <div  className='border border-gray-300 rounded p-2'>
-            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/v/q/u/-original-imahfxtgtf7enxkj.jpeg?q=70" alt="" className='h-44' />
-            <p>Adidas Sneakers</p>
-            <p className='font-semibold'>₹3,499</p>
-          </div>
-          <div  className='border border-gray-300 rounded p-2'>
-            <img src="https://rukminim2.flixcart.com/image/612/612/ku1k4280/card-holder/m/q/d/swka-86blk-card-holder-1-skywalk-6-original-imag799dzgza8yqz.jpeg?q=70" alt="" className='h-44' />
-            <p>Wallet And Belt</p>
-            <p className='font-semibold'>Just ₹500</p>
-          </div>
-          <div  className='border border-gray-300 rounded p-2'>
-            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/q/s/a/xl-sk-4-big-carry-multicolor-st-kurta-kjfab-original-imahyybd2hy9vrm6.jpeg?q=70" alt="" className='h-44' />
-            <p>Printed Kutas </p>
-            <p className='font-semibold'>₹999</p>
-          </div>
-          <div  className='border border-gray-300 rounded p-2'>
-            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/z/o/e/s-trishul-01-sanvi-fashion-original-imahfu37gzxrsag4.jpeg?q=70" alt="" className='h-44' />
-            <p>Kurtas</p>
-            <p className='font-semibold'>₹1,499</p>
-          </div>
-          <div  className='border border-gray-300 rounded p-2'>
-            <img src="https://rukminim2.flixcart.com/image/612/612/l0igvww0/shirt/4/a/s/s-rgw-den01-shd-regrowth-original-imagcamjaazjd3bt.jpeg?q=70" alt="" className='h-44' />
-            <p>Regular </p>
-            <p className='font-semibold'  >₹659</p>
-          </div>
-          <div  className='border border-gray-300 rounded p-2'>
-            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/b/d/f/3xl-13-lstr-wine-vtexx-original-imagnzbummhkgr7p.jpeg?q=70" alt="" className='h-44' />
-            <p>Formal </p>
-            <p className='font-semibold'  >₹1,599</p>
-          </div>
-          <div  className='border border-gray-300 rounded p-2'>
-            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/q/6/w/s-jawan-one-nb-nicky-boy-original-imahfyq2abjg4nyq.jpeg?q=70" alt="" className='h-44' />
-            <p>Casual Outfits </p>
-            <p className='font-semibold'  >₹199+</p>
-          </div>
 
-         
-        </section>
-      </section>
 
       {/* Categories Section */}
-      <section className="bg-gray-100  py-16 h-auto ">
+      <section className="bg-gray-100  py-5 h-auto  w-full">
         <div className="container mx-auto text-center">
           <h2 className="text-2xl font-bold mb-4">Shop by Category</h2>
-          <div className="flex justify-center space-x-4">
-            <div className="p-4 bg-white  font-bold arrival-bg rounded object-cover  shadow-md">
+          <div className="flex justify-center  ">
+            <div className="p-4 ml-2  bg-white   md:font-bold sm:font-bold arrival-bg rounded object-cover md:w-44 sm:w-44 w-24 shadow-md">
               <p>New Arrivals</p>
             </div>
-            <div className="p-4 font-bold product-bg bg-white rounded shadow-md">
+            <div className="p-4  ml-2 md:font-bold sm:font-bold product-bg bg-white rounded shadow-md md:w-44 sm:w-44 w-16 h-20">
               <p>Productivity</p>
             </div>
-            <div className="p-4 font-bold grocery-bg bg-white rounded shadow-md">
+            <div className="p-4 ml-2 md:font-bold sm:font-bold grocery-bg hidden bg-white rounded shadow-md md:w-44 sm:w-44 w-16">
               <p>Grocery</p>
             </div>
-            <div className="p-4 hero-bg font-bold bg-white rounded shadow-md">
+            <div className="p-4 ml-2 hero-bg md:font-bold sm:font-bold bg-white rounded shadow-md md:w-44 sm:w-44 w-24">
               <p>Accessories</p>
             </div>
-            <div className="p-4 font-bold sale-bg bg-white rounded shadow-md w-32">
+            <div className="p-4 ml-2 mr-1 md:font-bold sm:font-bold sale-bg bg-white rounded shadow-md md:w-44 sm:w-44 w-24">
               <p>Sale</p>
             </div>
           </div>
@@ -167,25 +169,25 @@ const HomePage = () => {
       </section>
 
       {/* Shop by Collection Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-5 mx-1  w-screen">
         <div className="container mx-auto text-center">
           <h2 className="text-2xl font-bold mb-4">Shop by Collection</h2>
           <p className="mb-6">Each season, we collaborate with world-class designers to create a collection inspired by the natural world.</p>
           <div className="flex justify-center space-x-4">
-            <div className="p-4 font-bold text-white bg-white handcraft-bg rounded shadow-md">
+            <div className="p-4 ml-2 font-bold text-white bg-white handcraft-bg rounded shadow-md">
               <p>Handcrafted Collection</p>
             </div>
             <div className="p-4 bench-bg font-bold  bg-white rounded shadow-md">
               <p>Organized Desk Collection</p>
             </div>
-            <div className="p-4   fashion-bg font-bold text-white bg-white rounded shadow-md">
+            <div className="fashion-bg font-bold text-white bg-white rounded shadow-md">
             </div>
           </div>
         </div>
       </section>
 
       {/* Simple Productivity Section */}
-      <section className="bg-gray-100 py-16">
+      <section className="bg-gray-100 mx-5  w-full py-5 ">
         <div className="container mx-auto text-center">
           <h2 className="text-2xl font-bold mb-4">Simple productivity</h2>
           <p className="mb-6">Endless tasks, limited hours, a single piece of paper. Not really a haiku, but we’re doing our best here. No kanban boards, burndown charts, or tangled flowcharts with our Focus system. Just the undeniable urge to fill empty circles.</p>
@@ -194,9 +196,9 @@ const HomePage = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8">
+      <footer className="bg-gray-900 text-white py-8   ">
         <div className="flex">
-          <div className='w-1/5 ml-10'>
+          <div className='w-1/4 ml-5'>
             <h3 className="font-bold mb-2">Shop</h3>
             <ul>
               <li><a href="#bags" className="hover:underline">Bags</a></li>
@@ -206,7 +208,7 @@ const HomePage = () => {
               <li><a href="#accessories" className="hover:underline">Accessories</a></li>
             </ul>
           </div>
-          <div className='w-1/5'>
+          <div className='w-1/4'>
             <h3 className="font-bold mb-2">Company</h3>
             <ul>
               <li><a href="#who-we-are" className="hover:underline">Who we are</a></li>
@@ -217,7 +219,7 @@ const HomePage = () => {
               <li><a href="#privacy" className="hover:underline">Privacy</a></li>
             </ul>
           </div>
-          <div className='w-1/5'>
+          <div className='w-1/4'>
             <h3 className="font-bold mb-2">Account</h3>
             <ul>
               <li><a href="#manage-account" className="hover:underline">Manage Account</a></li>
@@ -225,7 +227,7 @@ const HomePage = () => {
               <li><a href="#redeem-gift-card" className="hover:underline">Redeem a Gift Card</a></li>
             </ul>
           </div>
-          <div className='w-1/5'>
+          <div className='w-1/4'>
             <h3 className="font-bold mb-2">Connect</h3>
             <ul>
               <li><a href="#contact-us" className="hover:underline">Contact Us</a></li>
@@ -234,16 +236,17 @@ const HomePage = () => {
               <li><a href="#pinterest" className="hover:underline">Pinterest</a></li>
             </ul>
           </div>
-          <div className='w-1/2'>
+          
+        </div>
+        <div className='w-full  ml-5 mt-5 mb-5'>
             <h3 className="font-bold mb-2">Sign up for our newsletter</h3>
             <p className="mb-4">The latest deals and savings, sent to your inbox weekly.</p>
-            <div className="flex ">
-              <input type="email" placeholder="Enter your email" className="p-2 rounded-l bg-white text-black w-96 " />
-              <button className="p-2 bg-blue-500 text-white rounded-r">Sign up</button>
+            <div className="flex  ">
+              <input type="email" placeholder="Enter your email" className="p-2 rounded-l h-10 bg-white text-black  " />
+              <button className="p-2 bg-blue-500 text-white rounded-r h-10 w-20">Sign up</button>
             </div>
           </div>
-        </div>
-        <div className='text-center'>&copy; 2024 Guddu Kumar</div>
+        <div className='text-center '>&copy; 2024 Guddu Kumar</div>
       </footer>
     </div>
   );
