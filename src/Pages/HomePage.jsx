@@ -1,5 +1,6 @@
 import React from 'react';
 import './page.css'
+import SlideComponent from '../slides/SlideComponent';
 const HomePage = () => {
   return (
     <div className="w-screen bg-gray-100 mt-5 relative -z-10 top-24 ">
@@ -93,9 +94,10 @@ const HomePage = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="bg-white  w-auto mx-3 offers-bg h-11/12 mt-3  text-white  py-16">
+      <section className="bg-white  w-auto mx-3  mt-3  text-white   ">
         <div className="container mx-auto text-center">
-          <button className="px-6 py-3 mt-56 bg-blue-500 text-white rounded">Shop New Arrivals</button>
+          <SlideComponent/>
+          {/* <button className="px-6 py-3 mt-56 bg-blue-500 text-white rounded">Shop New Arrivals</button> */}
         </div>
       </section>
       <section className='mt-5 pb-8 bg-white py-2 mx-3'>

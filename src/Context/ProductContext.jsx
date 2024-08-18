@@ -8,12 +8,11 @@ export const ProductProvider = ({ children }) => {
         const items = JSON.parse(localStorage.getItem('product'));
         return items || [];
     });
-    
+
      useEffect(() => {
         localStorage.setItem('product' , JSON.stringify(product));
      }, [product])
      
-
     useEffect(() => {
         async function fetchProduct() {
             const url = 'https://dummyjson.com/products';

@@ -3,7 +3,7 @@ import { CartContext } from '../Context/CartContext';
 
 
 const renderCartItems = (cartProducts) => {
-    const items = []
+    const items = [];
     items.push(
         <table className=' font-bold text-xl mt-5 ml-5 mb-5'>
             <tr className=''>
@@ -17,7 +17,7 @@ const renderCartItems = (cartProducts) => {
     for (let i = 0; i < cartProducts.length; i++) {
         sum += (cartProducts[i].price)
         items.push(
-            <table key={i} className='ml-5 w-auto mr-5'>
+            <table key={i+1} className='ml-5 w-auto mr-5'>
                 <tr className=''>
                     <td className=' px-2 py-2  font-semibold'>{i + 1}.</td>
                     <td className=' pl-5 py-2 '>{cartProducts[i].title}</td>

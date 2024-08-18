@@ -1,10 +1,10 @@
 import React, { createContext,useEffect, useContext, useState } from 'react';
-import { ProductContext } from './ProductContext';
+// import { ProductContext } from './ProductContext';
 
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-    const { product } = useContext(ProductContext);
+    // const { product } = useContext(ProductContext);
     const [cartProducts, setCartProducts] = useState(()=>{
         const items = JSON.parse(localStorage.getItem('cartProducts'));
         return items || [];

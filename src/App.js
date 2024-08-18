@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import ProductView from './Pages/ProductView';
 import { CartProvider } from './Context/CartContext';
 import CartPage from './Pages/CartPage';
+import { useEffect } from 'react';
 function App() {
   const { id } = useParams();
   const router = createBrowserRouter([
@@ -30,8 +31,25 @@ function App() {
     }
   ])
 
+  useEffect(() => {
+    (async () => {
+      try {
+        let response = await fetch('http://localhost:5050/api/users');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        let data = await response.json();
+        console.log(data);
+      } catch (error) {
+        console.error('Fetch error:', error);
+      }
+    })();
+  }, []);
+  
+
   return (
     <div className='font-serif'>
+    
       <ProductProvider>
         <CartProvider>
           <RouterProvider router={router} />
